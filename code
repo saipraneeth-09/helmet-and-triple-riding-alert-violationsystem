@@ -8,10 +8,10 @@ from ultralytics import YOLO
 # Twilio Configuration
 class TwilioNotifier:
     def __init__(self):
-        self.account_sid = os.getenv('TWILIO_ACCOUNT_SID', 'AC45d1c3de36027a6e0449f980fefaccc2')
-        self.auth_token = os.getenv('TWILIO_AUTH_TOKEN', 'c362ff04eacb5c2fef70637d4d9c6d57')
-        self.from_number = os.getenv('TWILIO_FROM_NUMBER', '+16062685012')
-        self.to_number = os.getenv('TWILIO_TO_NUMBER', '+919100794201')
+        self.account_sid = os.getenv('TWILIO_ACCOUNT_SID', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+        self.auth_token = os.getenv('TWILIO_AUTH_TOKEN', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+        self.from_number = os.getenv('TWILIO_FROM_NUMBER', 'xxxxxxxxxxxx')
+        self.to_number = os.getenv('TWILIO_TO_NUMBER', 'xxxxxxxxxxxxx')
         
         try:
             self.client = Client(self.account_sid, self.auth_token)
